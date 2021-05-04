@@ -6,15 +6,15 @@ namespace ConsoleApp1
 {
     class VerificaPositivoNegativo
     {
-        //static void Main(string[] args)
-        //{
+        static void Main(string[] args)
+        {
 
-        //    Console.WriteLine("Escreva um número");
-        //    var numero = Convert.ToInt32(Console.ReadLine());
-        //    if (numero > 0)
-        //        Console.WriteLine("Positivo");
-        //    else
-        //        Console.WriteLine("negativo");
-        //}
+            Console.WriteLine("Escreva um número");
+            var numero = Convert.ToInt32(Console.ReadLine());
+            if (numero > 0)
+                Console.WriteLine("Positivo");
+            else
+                Console.WriteLine("negativo");
+        }
     }
 }
