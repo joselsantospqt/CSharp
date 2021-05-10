@@ -72,6 +72,7 @@ namespace Calculadora
                             break;
                         default:
                             Console.WriteLine("OPERAÇÃO ENCERRADA! {COMMAND ERROR}");
+                            loop = false;
                             break;
                     }
                 }
