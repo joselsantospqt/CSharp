@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\Calculadora\\Calculadora.csproj": {}
   },
   "projects": {
-    "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\Calculadora\\Calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
-        "projectName": "ConsoleApp1",
-        "projectPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\Calculadora\\Calculadora.csproj",
+        "projectName": "Calculadora",
+        "projectPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\Calculadora\\Calculadora.csproj",
         "packagesPath": "C:\\Users\\José Ricardo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\Calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
