@@ -6,7 +6,7 @@ namespace ConsoleApp1
 {
     class VerificaIdade
     {
-        static void Main(string[] args)
+        public static void ExecutaVerificaIdade()
         {
             Console.WriteLine("Escreva seu nome");
             var nome = Console.ReadLine();

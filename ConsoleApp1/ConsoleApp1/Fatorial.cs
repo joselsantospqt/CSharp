@@ -6,7 +6,7 @@ namespace ConsoleApp1
 {
     class Fatorial
     {
-        static void Main(string[] args)
+        public static void ExecutaFatorial()
         {
             double n, numero, resultado;
             Console.WriteLine("Informe o número");
@@ -16,7 +16,7 @@ namespace ConsoleApp1
             while (n != 1)
             {
                 resultado = resultado * n;
-                n = n - 1;
+                n -= 1;
             }
 
             Console.WriteLine($"\nFatorial de {numero} é {resultado} ");

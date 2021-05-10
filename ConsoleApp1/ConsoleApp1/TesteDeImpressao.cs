@@ -4,9 +4,9 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class TesteDeImpressão
+    class TesteDeImpressao
     {
-        static void Main(string[] args)
+        public static void ExecutaTesteDeImpressao()
         {
             Console.WriteLine("Digite um número para começar");
             var numero = Convert.ToInt32(Console.ReadLine());

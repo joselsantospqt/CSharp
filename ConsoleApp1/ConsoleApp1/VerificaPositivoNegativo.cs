@@ -6,7 +6,7 @@ namespace ConsoleApp1
 {
     class VerificaPositivoNegativo
     {
-        static void Main(string[] args)
+        public static void ExecutaVerificaNumero()
         {
 
             Console.WriteLine("Escreva um número");
