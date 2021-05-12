@@ -25,4 +25,4 @@ Publisher: Will 保哥
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=doggy8088.netcore-snippets
 
 - Caso você use o Visual Studio, é apenas executar.
-- 
+
