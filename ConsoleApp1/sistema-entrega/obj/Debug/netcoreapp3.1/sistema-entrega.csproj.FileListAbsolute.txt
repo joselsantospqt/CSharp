@@ -1,0 +1,13 @@
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\bin\Debug\netcoreapp3.1\sistema-entrega.exe
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\bin\Debug\netcoreapp3.1\sistema-entrega.deps.json
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\bin\Debug\netcoreapp3.1\sistema-entrega.runtimeconfig.json
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\bin\Debug\netcoreapp3.1\sistema-entrega.runtimeconfig.dev.json
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\bin\Debug\netcoreapp3.1\sistema-entrega.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\bin\Debug\netcoreapp3.1\sistema-entrega.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\obj\Debug\netcoreapp3.1\sistema-entrega.csprojAssemblyReference.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\obj\Debug\netcoreapp3.1\sistema-entrega.AssemblyInfoInputs.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\obj\Debug\netcoreapp3.1\sistema-entrega.AssemblyInfo.cs
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\obj\Debug\netcoreapp3.1\sistema-entrega.csproj.CoreCompileInputs.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\obj\Debug\netcoreapp3.1\sistema-entrega.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\obj\Debug\netcoreapp3.1\sistema-entrega.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApp1\sistema-entrega\obj\Debug\netcoreapp3.1\sistema-entrega.genruntimeconfig.cache

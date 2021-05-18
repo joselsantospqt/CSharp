@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\Calculadora\\Calculadora.csproj",
-      "projectName": "Calculadora",
-      "projectPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\Calculadora\\Calculadora.csproj",
+      "projectUniqueName": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\sistema-entrega\\sistema-entrega.csproj",
+      "projectName": "sistema-entrega",
+      "projectPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\sistema-entrega\\sistema-entrega.csproj",
       "packagesPath": "C:\\Users\\José Ricardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\Calculadora\\obj\\",
+      "outputPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApp1\\sistema-entrega\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
