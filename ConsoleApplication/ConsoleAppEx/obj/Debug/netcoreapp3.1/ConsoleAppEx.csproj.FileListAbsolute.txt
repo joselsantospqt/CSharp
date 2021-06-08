@@ -1,0 +1,12 @@
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleAppEx.AssemblyInfoInputs.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleAppEx.AssemblyInfo.cs
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleAppEx.csproj.CoreCompileInputs.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleAppEx.exe
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleAppEx.deps.json
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleAppEx.runtimeconfig.json
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleAppEx.runtimeconfig.dev.json
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleAppEx.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\bin\Debug\netcoreapp3.1\ConsoleAppEx.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleAppEx.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleAppEx.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\ConsoleApp1\obj\Debug\netcoreapp3.1\ConsoleAppEx.genruntimeconfig.cache
