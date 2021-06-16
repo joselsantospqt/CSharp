@@ -1,0 +1,16 @@
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\bin\Debug\netcoreapp3.1\Repositorio.deps.json
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\bin\Debug\netcoreapp3.1\Repositorio.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\bin\Debug\netcoreapp3.1\Repositorio.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\bin\Debug\netcoreapp3.1\Interface.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\bin\Debug\netcoreapp3.1\Modelo.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\bin\Debug\netcoreapp3.1\Service.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\bin\Debug\netcoreapp3.1\Interface.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\bin\Debug\netcoreapp3.1\Modelo.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\obj\Debug\netcoreapp3.1\Repositorio.csprojAssemblyReference.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\obj\Debug\netcoreapp3.1\Repositorio.AssemblyInfoInputs.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\obj\Debug\netcoreapp3.1\Repositorio.AssemblyInfo.cs
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\obj\Debug\netcoreapp3.1\Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\obj\Debug\netcoreapp3.1\Repositorio.csproj.CopyComplete
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\obj\Debug\netcoreapp3.1\Repositorio.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Repositorio\obj\Debug\netcoreapp3.1\Repositorio.pdb

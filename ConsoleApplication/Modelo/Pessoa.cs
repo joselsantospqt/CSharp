@@ -2,20 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Calendario.Models
+namespace Modelo
 {
     public class Pessoa
     {
+        public int ID { get; set; }
         public string Nome { get; set; }
         public string SobreNome { get; set; }
-        public string NomeCompleto { get; set; }
 
         public DateTime DataNascimento { get; set; }
 
-        public void MontaNomeCompleto()
-        {
-            this.NomeCompleto =  $"{this.Nome} {this.SobreNome}";
-        }
-
+ 
     }
 }
