@@ -8,9 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Calendario/1.0.0": {
         "dependencies": {
-          "Interface": "1.0.0",
           "Modelo": "1.0.0",
-          "Repositorio": "1.0.0",
           "Service": "1.0.0"
         },
         "runtime": {
@@ -104,16 +102,10 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
-      "Interface/1.0.0": {
-        "dependencies": {
-          "Modelo": "1.0.0",
-          "Service": "1.0.0"
-        },
-        "runtime": {
-          "Interface.dll": {}
-        }
-      },
       "Modelo/1.0.0": {
+        "dependencies": {
+          "System.Data.SqlClient": "4.8.2"
+        },
         "runtime": {
           "Modelo.dll": {}
         }
@@ -121,9 +113,8 @@
       "Repositorio/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.90",
-          "Interface": "1.0.0",
           "Modelo": "1.0.0",
-          "Service": "1.0.0"
+          "System.Data.SqlClient": "4.8.2"
         },
         "runtime": {
           "Repositorio.dll": {}
@@ -133,6 +124,7 @@
         "dependencies": {
           "Dapper": "2.0.90",
           "Modelo": "1.0.0",
+          "Repositorio": "1.0.0",
           "System.Data.SqlClient": "4.8.2"
         },
         "runtime": {
@@ -223,11 +215,6 @@
       "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
-    },
-    "Interface/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Modelo/1.0.0": {
       "type": "project",

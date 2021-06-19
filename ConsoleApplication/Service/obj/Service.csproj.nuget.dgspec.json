@@ -46,6 +46,95 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Repositorio\\Repositorio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Repositorio\\Repositorio.csproj",
+        "projectName": "Repositorio",
+        "projectPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Repositorio\\Repositorio.csproj",
+        "packagesPath": "C:\\Users\\José Ricardo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Repositorio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\José Ricardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Modelo\\Modelo.csproj": {
+                "projectPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Modelo\\Modelo.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -98,6 +187,9 @@
             "projectReferences": {
               "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Modelo\\Modelo.csproj": {
                 "projectPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Modelo\\Modelo.csproj"
+              },
+              "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Repositorio\\Repositorio.csproj": {
+                "projectPath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Repositorio\\Repositorio.csproj"
               }
             }
           }
@@ -115,6 +207,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.90, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

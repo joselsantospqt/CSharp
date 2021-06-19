@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eh1RNT6C35JkH+0PAujBLYe27U0ODUJIv36sZP+wqO/IkZ+W0+OEJ2Kgb6Ox8rJZGEjn90CtBv24i2HW0iGnWg==",
+  "dgSpecHash": "+/K1Gmi+JXiqe1+jHAnm5euEfWKeVL8OFsMxOUEVB04fS522iMx72f1Qt8Z3uPm3giY22Ebx02bjjpkWFn0CYw==",
   "success": true,
   "projectFilePath": "C:\\Users\\José Ricardo\\Desktop\\Ricardo\\CSharp\\ConsoleApplication\\Calendario\\Calendario.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\José Ricardo\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\José Ricardo\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\José Ricardo\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\José Ricardo\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\José Ricardo\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",

@@ -1,7 +1,3 @@
-C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.csprojAssemblyReference.cache
-C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.AssemblyInfoInputs.cache
-C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.AssemblyInfo.cs
-C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.csproj.CoreCompileInputs.cache
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Calendario.exe
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Calendario.deps.json
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Calendario.runtimeconfig.json
@@ -15,14 +11,16 @@ C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Interface.dll
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Modelo.dll
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Repositorio.dll
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Service.dll
-C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Interface.pdb
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Modelo.pdb
-C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Repositorio.pdb
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Service.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Repositorio.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.csprojAssemblyReference.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.AssemblyInfoInputs.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.AssemblyInfo.cs
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.csproj.CoreCompileInputs.cache
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.csproj.CopyComplete
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.dll
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.pdb

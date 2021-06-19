@@ -9,9 +9,8 @@
       "Repositorio/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.90",
-          "Interface": "1.0.0",
           "Modelo": "1.0.0",
-          "Service": "1.0.0"
+          "System.Data.SqlClient": "4.8.2"
         },
         "runtime": {
           "Repositorio.dll": {}
@@ -104,28 +103,12 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
-      "Interface/1.0.0": {
-        "dependencies": {
-          "Modelo": "1.0.0",
-          "Service": "1.0.0"
-        },
-        "runtime": {
-          "Interface.dll": {}
-        }
-      },
       "Modelo/1.0.0": {
-        "runtime": {
-          "Modelo.dll": {}
-        }
-      },
-      "Service/1.0.0": {
         "dependencies": {
-          "Dapper": "2.0.90",
-          "Modelo": "1.0.0",
           "System.Data.SqlClient": "4.8.2"
         },
         "runtime": {
-          "Service.dll": {}
+          "Modelo.dll": {}
         }
       }
     }
@@ -213,17 +196,7 @@
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
-    "Interface/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Modelo/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

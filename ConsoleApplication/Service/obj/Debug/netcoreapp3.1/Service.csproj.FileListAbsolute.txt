@@ -2,7 +2,9 @@ C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\bin\Deb
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\bin\Debug\netcoreapp3.1\Service.dll
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\bin\Debug\netcoreapp3.1\Service.pdb
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\bin\Debug\netcoreapp3.1\Modelo.dll
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\bin\Debug\netcoreapp3.1\Repositorio.dll
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\bin\Debug\netcoreapp3.1\Modelo.pdb
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\bin\Debug\netcoreapp3.1\Repositorio.pdb
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\obj\Debug\netcoreapp3.1\Service.csprojAssemblyReference.cache
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfoInputs.cache
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Service\obj\Debug\netcoreapp3.1\Service.AssemblyInfo.cs

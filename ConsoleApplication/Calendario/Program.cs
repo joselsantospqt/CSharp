@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using Calendario.Repositorio;
+using Service;
 
 namespace Calendario
 {
@@ -13,19 +14,21 @@ namespace Calendario
             var opcao = 0;
             var loop = false;
             var vListaPessoas = new List<Pessoa>();
-            RepositorioPessoa repositorioPessoa = new RepositorioPessoa();
-
-            var cliente = repositorioPessoa.GetAll();
+            PessoaService ServicoPessoa = new PessoaService();
+            
+            var cliente = ServicoPessoa.GetAll();
 
             Pessoa pessoa = new Pessoa();
-            pessoa.Nome = "José Ricardo";
-            pessoa.SobreNome = "Lima dos santos";
-            pessoa.DataNascimento = Convert.ToDateTime("04/04/1994");
+            pessoa.NM_NOME = "José Ricardo";
+            pessoa.NM_SOBRENOME = "Lima dos santos";
+            pessoa.DT_NASCIMENTO = Convert.ToDateTime("04/04/1994");
             pessoa.ID = cliente.Count + 1;
 
-            repositorioPessoa.Create(pessoa);
+            ServicoPessoa.Create(pessoa);
 
-            var cliente2 = repositorioPessoa.GetAll();
+            var cliente2 = ServicoPessoa.GetAll();
+
+            //var cliente3 =ServicoPessoa.GetPessoa(1);
 
             Console.WriteLine(cliente);
             //while (loop)

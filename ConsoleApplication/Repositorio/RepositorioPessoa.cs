@@ -1,15 +1,14 @@
 ﻿using System;
-using Interface;
 using System.Collections.Generic;
 using System.Text;
 using Modelo;
-using System.Data.SqlClient;
-using Service;
 using Dapper;
+using Repositorio;
+using System.Data.SqlClient;
 
 namespace Calendario.Repositorio
 {
-    public class RepositorioPessoa : BaseService, IRepositorioPessoa
+    public class RepositorioPessoa : BaseRepositorio
     {
         private static List<Pessoa> ListaDePessoasCadastradas { get; set; } = new List<Pessoa>();
 
@@ -17,14 +16,14 @@ namespace Calendario.Repositorio
         {
             using (SqlConnection dbConnection = new SqlConnection(ConnectDataBase()))
             {
-                var sql = @"dbo.InsertPessoa";
+                var sql = @"InsertPessoa";
 
                 dbConnection.Execute(sql, new
                 {
-                    id = pessoa.ID,
-                    Nome = pessoa.Nome,
-                    SobreNome = pessoa.SobreNome,
-                    DataNascimento = pessoa.DataNascimento
+                    ID = pessoa.ID,
+                    NOME = pessoa.NM_NOME,
+                    SOBRENOME = pessoa.NM_SOBRENOME,
+                    DATANASCIMENTO = pessoa.DT_NASCIMENTO
                 }, commandType: System.Data.CommandType.StoredProcedure);
             }
 
@@ -34,11 +33,11 @@ namespace Calendario.Repositorio
         {
             using (SqlConnection dbConnection = new SqlConnection(ConnectDataBase()))
             {
-                var sql = @"dbo.DeletePessoa";
+                var sql = @"DeletePessoa";
 
                 dbConnection.Execute(sql, new
                 {
-                    IdPessoa = pessoa.ID,
+                    ID = pessoa.ID,
                 }, commandType: System.Data.CommandType.StoredProcedure);
             }
         }
@@ -47,7 +46,7 @@ namespace Calendario.Repositorio
         {
             using (SqlConnection dbConnection = new SqlConnection(ConnectDataBase()))
             {
-                var sql = @"[dbo].[GetAll]";
+                var sql = @"GetAll";
 
                 var resultado = dbConnection.Query<Pessoa>(sql, commandType: System.Data.CommandType.StoredProcedure);
 
@@ -55,50 +54,35 @@ namespace Calendario.Repositorio
             }
         }
 
-        public Pessoa GetPessoa(int id)
-        {
-            using (SqlConnection dbConnection = new SqlConnection(ConnectDataBase()))
-            {
-                var sql = @"[dbo].[SelectCustomerById]";
+        //public Pessoa GetPessoa(int id)
+        //{
+        //    using (SqlConnection dbConnection = new SqlConnection(ConnectDataBase()))
+        //    {
+        //        Pessoa obj = new Pessoa();
+        //        var sql = @"GetById";
+        //        var resultado = dbConnection.Query<Pessoa>(sql, new
+        //        {
+        //            ID = id,
+        //        },
+        //        commandType: System.Data.CommandType.StoredProcedure);
 
-                dbConnection.Open();
-
-                var command = dbConnection.CreateCommand();
-
-                command.CommandText = sql;
-                command.CommandType = System.Data.CommandType.StoredProcedure;
-                command.Parameters.Add(new SqlParameter("@IdPessoa", id));
-
-                var result = command.ExecuteReader();
-
-                Pessoa pessoa = null;
-
-                while (result.Read())
-                {
-                    pessoa = new Pessoa();
-                    pessoa.SobreNome = result[2].ToString();
-                    pessoa.Nome = result[1].ToString();
-                    pessoa.ID = Convert.ToInt32(result[0]);
-                }
-
-                dbConnection.Close();
-
-                return pessoa;
-            }
-        }
+        //        return resultado;
+        //    }
+        //}
 
         public void Update(Pessoa pessoa, int id)
         {
             using (SqlConnection dbConnection = new SqlConnection(ConnectDataBase()))
             {
-                var sql = @"dbo.UpdatePessoa";
+                var sql = @"UpdatePessoa";
 
                 dbConnection.Execute(sql, new
                 {
-                    Nome = pessoa.Nome,
-                    SobreNome = pessoa.SobreNome,
-                    DataNascimento = pessoa.DataNascimento,
-                    IdPessoa = id
+                    ID = id,
+                    NOME = pessoa.NM_NOME,
+                    SOBRENOME = pessoa.NM_SOBRENOME,
+                    DATANASCIMENTO = pessoa.DT_NASCIMENTO,
+               
                 }, commandType: System.Data.CommandType.StoredProcedure);
             }
         }
