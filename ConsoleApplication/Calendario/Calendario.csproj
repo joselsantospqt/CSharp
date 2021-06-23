@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="SQL\SQLQuery1.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="SQL\" />
   </ItemGroup>
 

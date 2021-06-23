@@ -61,3 +61,12 @@ AS
     select * from PESSOA
 WHERE ID = @ID;
 RETURN
+
+CREATE PROCEDURE dbo.GetByName
+(
+@NOME varchar(50)
+)
+AS
+    select * from PESSOA
+WHERE NM_NOME LIKE @NOME;
+RETURN

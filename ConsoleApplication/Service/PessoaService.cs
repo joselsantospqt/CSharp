@@ -29,12 +29,18 @@ namespace Service
             var PessoaRepository = new RepositorioPessoa();
             return PessoaRepository.GetAll();
         }
-        //public Pessoa GetPessoa(int id)
-        //{
-        //    var PessoaRepository = new RepositorioPessoa();
-        //    return PessoaRepository.GetPessoa(id);
-        //}
-       
+        public Pessoa GetById(int id)
+        {
+            var PessoaRepository = new RepositorioPessoa();
+            return PessoaRepository.GetById(id);
+        }
+
+        public List<Pessoa> GetByName(string nome)
+        {
+            var PessoaRepository = new RepositorioPessoa();
+            return PessoaRepository.GetByName(nome);
+        }
+
 
     }
 }

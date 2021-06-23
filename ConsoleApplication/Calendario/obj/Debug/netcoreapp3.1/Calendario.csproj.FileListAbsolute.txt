@@ -25,3 +25,4 @@ C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.dll
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.pdb
 C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\obj\Debug\netcoreapp3.1\Calendario.genruntimeconfig.cache
+C:\Users\José Ricardo\Desktop\Ricardo\CSharp\ConsoleApplication\Calendario\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

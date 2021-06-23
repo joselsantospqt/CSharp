@@ -10,7 +10,8 @@ namespace Calendario.Repositorio
         void Create(Pessoa pessoa);
         void Update(Pessoa pessoa, int id);
         void Delete(Pessoa pessoa);
-        Pessoa GetPessoa(int id);
+        Pessoa GetById(int id);
+        List<Pessoa> GetByName(string nome);
         List<Pessoa> GetAll();
 
     }
