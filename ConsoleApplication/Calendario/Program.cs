@@ -5,6 +5,9 @@ using System.Globalization;
 using Calendario.Repositorio;
 using Service;
 using Newtonsoft.Json;
+using System.Text.RegularExpressions;
+using System.IO;
+using System.Text;
 
 namespace Calendario
 {
@@ -12,16 +15,13 @@ namespace Calendario
     {
         static void Main(string[] args)
         {
-            DateTime DataHoje = Convert.ToDateTime(DateTime.Now.ToString("dd/MM/yyyy"));
-            DateTime DataInfo = Convert.ToDateTime("20/03/1994");
-
-            var a = Data.CalculaPeriodo(DataInfo, DataHoje);
-
+            string path = Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.FullName;
             int n;
             var start = 0;
             var loop = true;
             var vListaPessoas = new List<Pessoa>();
             PessoaService ServicoPessoa = new PessoaService();
+            DateTime DataHoje = Convert.ToDateTime(DateTime.Now.ToString("dd/MM/yyyy"));
 
             ExibeFuncionalidades();
             var vTemp = Console.ReadLine();
@@ -35,13 +35,6 @@ namespace Calendario
                 start = 99;
             }
 
-   
-
-            //var cliente = ServicoPessoa.GetAll();
-            //var cliente2 = ServicoPessoa.GetByName("Alex");
-
-            //Console.WriteLine(JsonConvert.SerializeObject(cliente,Formatting.Indented));
-
 
             while (loop)
             {
@@ -49,9 +42,20 @@ namespace Calendario
                 {
                     case 0:
                         ExibeFuncionalidades();
-                        start = Convert.ToInt32(Console.ReadLine());
+                        vTemp = Console.ReadLine();
+                        result = Int32.TryParse(vTemp, out n);
+                        if (result)
+                        {
+                            start = Convert.ToInt32(vTemp);
+                        }
+                        else
+                        {
+                            start = 99;
+                        }
                         break;
                     case 1:
+                        var ListDeRegistros = ServicoPessoa.GetAll();
+                        int vId = ListDeRegistros.Count;
                         var pessoa = new Pessoa();
                         Console.WriteLine("Digite o nome:");
                         pessoa.NM_NOME = Console.ReadLine();
@@ -65,7 +69,35 @@ namespace Calendario
                             date = Console.ReadLine().Split('/');
                         }
                         pessoa.DT_NASCIMENTO = new DateTime(Convert.ToInt32(date[2]), Convert.ToInt32(date[1]), Convert.ToInt32(date[0]));
+
+                        if (vId != 0)
+                        {
+                            var vPessoa = ListDeRegistros[vId - 1];
+                            vId = vPessoa.ID + 1;
+                            pessoa.ID = vId;
+                        }
+                        else
+                            pessoa.ID = vId;
+
+
                         ServicoPessoa.Create(pessoa);
+                        //REGIÃO AONDE SERÁ TUDO SALVO NEM UM ARQUIVO EM BRANCO 
+                        ListDeRegistros = ServicoPessoa.GetAll();
+                        var json = JsonConvert.SerializeObject(ListDeRegistros, Formatting.Indented);
+                        string PathRelatorio = Path.Combine(path, "relatorio.txt");
+                        if (File.Exists(PathRelatorio))
+                        {
+                            StreamWriter sw = new StreamWriter(PathRelatorio.ToString());
+                            sw.WriteLine(json);
+                            sw.Close();
+                        }
+                        else
+                        {
+                            StreamWriter sw = new StreamWriter(PathRelatorio.ToString(), true, Encoding.UTF8);
+                            sw.WriteLine(json);
+                            sw.Close();
+                        }
+
                         start = 0;
                         break;
 
@@ -80,15 +112,19 @@ namespace Calendario
                             var vIndex = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine("Carregando...");
                             var vRetornoPessoa = ServicoPessoa.GetById(vIndex);
-                            Console.WriteLine("Digite novo nome:");
-                            vRetornoPessoa.NM_NOME = Console.ReadLine();
-                            Console.WriteLine("Digite novo SobreNome:");
-                            vRetornoPessoa.NM_SOBRENOME = Console.ReadLine();
-                            Console.WriteLine("Digite novo aniversário: ex(dd/mm/yyyy)");
-                            var vDate = Console.ReadLine().Split('/');
-                            vRetornoPessoa.DT_NASCIMENTO = new DateTime(Convert.ToInt32(vDate[2]), Convert.ToInt32(vDate[1]), Convert.ToInt32(vDate[0]));
-                            ServicoPessoa.Update(vRetornoPessoa, vIndex);
-
+                            if (vRetornoPessoa.ID != -1)
+                            {
+                                Console.WriteLine("Digite novo nome:");
+                                vRetornoPessoa.NM_NOME = Console.ReadLine();
+                                Console.WriteLine("Digite novo SobreNome:");
+                                vRetornoPessoa.NM_SOBRENOME = Console.ReadLine();
+                                Console.WriteLine("Digite novo aniversário: ex(dd/mm/yyyy)");
+                                var vDate = Console.ReadLine().Split('/');
+                                vRetornoPessoa.DT_NASCIMENTO = new DateTime(Convert.ToInt32(vDate[2]), Convert.ToInt32(vDate[1]), Convert.ToInt32(vDate[0]));
+                                ServicoPessoa.Update(vRetornoPessoa, vIndex);
+                            }
+                            else
+                                Console.WriteLine($"Não foi encontrado uma pessoa com o ID: {vIndex}.");
                         }
                         else
                             Console.WriteLine($"Não foi encontrado uma pessoa com o nome: {vRetornoAtualiza[0]}.");
@@ -106,7 +142,11 @@ namespace Calendario
                             var vIndex = Convert.ToInt32(Console.ReadLine());
                             Console.WriteLine("Carregando...");
                             var vRetornoPessoa = ServicoPessoa.GetById(vIndex);
-                            ServicoPessoa.Delete(vRetornoPessoa);
+                            if (vRetornoPessoa.ID != -1)
+                                ServicoPessoa.Delete(vRetornoPessoa);
+                            else
+                                Console.WriteLine($"Não foi encontrado uma pessoa com o ID: {vIndex}.");
+
 
                         }
                         else
@@ -116,13 +156,19 @@ namespace Calendario
                         break;
 
                     case 4:
-                        Console.WriteLine("Selecione o ID da pessoa que deseja Buscar:");
+                        Console.WriteLine("Digite o ID da pessoa que deseja Buscar:");
                         var vRetornoBuscarPorID = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("--- RESULTADO ---");
                         var vPessoaByID = ServicoPessoa.GetById(vRetornoBuscarPorID);
-                        if (vPessoaByID != null)
+                        if (vPessoaByID.ID != -1)
                         {
+                            var vData = Data.CalculaPeriodo(vPessoaByID.DT_NASCIMENTO, DataHoje);
                             Console.WriteLine(JsonConvert.SerializeObject(vPessoaByID, Formatting.Indented));
+                            if (vData.NR_DIAS == 0)
+                                Console.WriteLine($"Parabéns {Regex.Replace(vPessoaByID.NM_NOME, @"\s+", "")} seu aniversário é hoje !!! Felicidades !!! \n");
+                            else
+                                Console.WriteLine($"Para o aniversário do {vPessoaByID.NM_NOME} faltam: {vData.NR_DIAS} Dias e será : {vData.NM_DIA}.\n");
+
                         }
                         else
                             Console.WriteLine($"Não foi encontrado uma pessoa com o ID: {vRetornoBuscarPorID}.");
@@ -165,17 +211,13 @@ namespace Calendario
             Console.WriteLine("3 - Para excluir um cliente");
             Console.WriteLine("4 - Para obter um cliente");
             Console.WriteLine("5 - Para excluir todos os clientes");
-            Console.WriteLine("q - Para sair");
+            Console.WriteLine("q - Para sair \n");
         }
 
         private static string[] SolicitaNomeBuscar()
         {
             Console.WriteLine("Digite o nome da pessoa que deseja procurar:");
             return Console.ReadLine().Split();
-        }
-
-        private static void GravaRegistroDePessoas()
-        {
         }
 
     }

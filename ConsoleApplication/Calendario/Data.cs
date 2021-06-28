@@ -14,7 +14,13 @@ namespace Calendario
             public int NR_ANOS { get; set; }
         }
 
-        //METODO QUE RETORNA UMA STRING COM O NOME DO MÊS ATUAL
+
+        /// <summary>
+        ///METODO QUE RETORNA UMA STRING COM O NOME DO MÊS ATUAL
+        /// </summary>
+        /// <param name="pMes"></param>
+        /// <param name="pMes3Digitos"></param>
+        /// <returns>RETORNA UMA STRING COM O NOME DO MÊS ATUAL</returns>
         public static string RetornaDescMes(int pMes, bool pMes3Digitos = false)
         {
             string vMes = Convert.ToString(pMes.ToString());
@@ -76,7 +82,11 @@ namespace Calendario
             return vMes;
         }
 
-        //Retorna a quantidade de dias de cada mês, inclusive o mês de fevereiro para ano bissexto.
+        /// <summary>
+        ///Retorna a quantidade de dias de cada mês, inclusive o mês de fevereiro para ano bissexto.
+        /// </summary>
+        /// <param name="pDataSimulacao"></param>
+        /// <returns>Retorna a quantidade de dias de cada mês, inclusive o mês de fevereiro para ano bissexto.</returns>
         public static string DiasMes(DateTime pDataSimulacao)
         {
             string[] vDias = new string[13];
@@ -100,7 +110,7 @@ namespace Calendario
         /// Método que recebe uma data e retorna o último dia do mês
         /// </summary>
         /// <param name="pData"></param>
-        /// <returns>Retorna o último dia do mês</returns>
+        /// <returns>retorna o último dia do mês</returns>
         public static DateTime DataFimMes(DateTime pData)
         {
             System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
@@ -114,6 +124,12 @@ namespace Calendario
             return vData;
         }
 
+        /// <summary>
+        ///Calcula Periodo de dias para aniversário 
+        /// </summary>
+        /// <param name="pDtInicial"></param>
+        /// <param name="pDtFinal"></param>
+        /// <returns>Retorna dias para o aniversário</returns>
         public static StrTempo CalculaPeriodo(DateTime pDtInicial, DateTime pDtFinal)
         {
             StrTempo vTempo = new StrTempo();
@@ -123,7 +139,7 @@ namespace Calendario
             int vAnoIni = pDtInicial.Year, vMesIni = pDtInicial.Month, vDiaIni = pDtInicial.Day;
 
             System.TimeSpan diferenca = pDtInicial - pDtFinal;
-            var b = diferenca.TotalDays;
+            //var b = diferenca.TotalDays;
             if (vMesIni < vMesFim)
             {
                 var vDataFimAnoAtual = Convert.ToDateTime($"31/12/{vAnoFim}");
@@ -137,7 +153,10 @@ namespace Calendario
             else
             {
                 System.TimeSpan vDiasTotal = pDtInicial - pDtFinal;
-                vDias = (int)vDiasTotal.TotalDays;
+                if (Math.Abs((int)vDiasTotal.TotalDays) > 366)
+                    vDias = 0;
+                else
+                    vDias = (int)vDiasTotal.TotalDays;
             }
 
             if (DateTime.IsLeapYear(vAnoFim))
@@ -145,6 +164,7 @@ namespace Calendario
                 vDias = vDias + 1;
             }
 
+            vTempo.NM_DIA = RetornaDiaSemana(pDtInicial);
             vTempo.NR_DIAS = vDias;
             vTempo.NR_MESES = vMeses;
             vTempo.NR_ANOS = vAnos;
@@ -152,6 +172,11 @@ namespace Calendario
             return vTempo;
         }
 
+        /// <summary>
+        /// Método que recebe uma data e retorna o nome do dia
+        /// </summary>
+        /// <param name="pData"></param>
+        /// <returns>retorna o nome do dia</returns>
         public static string RetornaDiaSemana(DateTime pData)
         {
             string vRetorno = string.Empty;

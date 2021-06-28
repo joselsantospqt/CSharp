@@ -1,0 +1,32 @@
+﻿[
+  {
+    "ID": 0,
+    "NM_NOME": "Jose",
+    "NM_SOBRENOME": "Ricardo",
+    "DT_NASCIMENTO": "1994-04-04T00:00:00"
+  },
+  {
+    "ID": 1,
+    "NM_NOME": "jose",
+    "NM_SOBRENOME": "ricardo",
+    "DT_NASCIMENTO": "1994-04-04T00:00:00"
+  },
+  {
+    "ID": 2,
+    "NM_NOME": "Felipe",
+    "NM_SOBRENOME": "Santos",
+    "DT_NASCIMENTO": "1994-04-01T00:00:00"
+  },
+  {
+    "ID": 3,
+    "NM_NOME": "adelson",
+    "NM_SOBRENOME": "santos",
+    "DT_NASCIMENTO": "1991-06-28T00:00:00"
+  },
+  {
+    "ID": 4,
+    "NM_NOME": "Mib",
+    "NM_SOBRENOME": "Preto",
+    "DT_NASCIMENTO": "1984-06-29T00:00:00"
+  }
+]

@@ -101,9 +101,8 @@ namespace Calendario.Repositorio
             catch (Exception ex)
             {
                 var retorno = new List<Pessoa>();
-                Console.WriteLine(ex.ToString());
+                Console.WriteLine(ex.Message.ToString());
                 return retorno;
-
             }
         }
 
@@ -125,6 +124,7 @@ namespace Calendario.Repositorio
                     var resultado = command.ExecuteReader();
 
                     Pessoa pessoa = new Pessoa();
+                    pessoa.ID = -1;
 
                     while (resultado.Read())
                     {

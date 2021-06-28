@@ -11,6 +11,5 @@ namespace Modelo
         public string NM_SOBRENOME { get; set; }
         public DateTime DT_NASCIMENTO { get; set; }
 
- 
     }
 }
